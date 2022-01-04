@@ -1,0 +1,228 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Bike survey form</h1>
+    <p id="description" class="description text-center">
+      Thanks for taking the time to help out with this survery to identify 2020 bike trends.
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-goup">
+    <label id="email-label"
+           for="email">email</label>
+    <input
+           type="email"
+           name="email"
+           id="email"
+           class="form-control"
+           placeholder="enter your email"
+           required
+           />
+    </div>
+      <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <label id="Bike-label" for "bike">What Brand of bike do you currently own</label>
+      <input
+             type="text"
+             name="bike"
+             id="bike"
+             class="form-control"
+             placeholder="e.g  trek, canyon, ibis, etc "
+             required
+             />
+    </div>
+   <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+     <div class="form-group">
+      <p>what wheel size is you current bike</p>
+      <label>
+        <input
+               name="wheel-size"
+               value="26"
+               type="radio"
+               class="input-radio"
+               checked
+               />26"</label>
+        <label>
+        <input
+               name="wheel-size"
+               value="650b"
+               type="radio"
+               class="input-radio"
+               checked
+               />650b"</label>
+        <label>
+        <input
+               name="wheel-size"
+               value="29"
+               type="radio"
+               class="input-radio"
+               checked
+               />29"</label>
+        <label>
+        <input
+               name="wheel-size"
+               value="mullet"
+               type="radio"
+               class="input-radio"
+               checked
+               />Mullet (29/27.5)"</label>
+    </div>
+        <div class="form-group">
+      <p> </p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>what style of riding do you do?</option>
+        <option value="student">xc</option>
+        <option value="job">trail</option>
+        <option value="learner">enduro</option>
+        <option value="preferNo">freeride</option>
+        <option value="other">dh</option>
+      </select>
+    </div>
+      <div class="form-group">
+      <p>
+        What on your bike could be improved?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="front-end-projects"
+          type="checkbox"
+          class="input-checkbox"
+        />sizing</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="back-end-projects"
+          type="checkbox"
+          class="input-checkbox"
+        />geometry</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="data-visualization"
+          type="checkbox"
+          class="input-checkbox"
+        />suspension</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="challenges"
+          type="checkbox"
+          class="input-checkbox"
+        />drivetrain</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="open-source-community"
+          type="checkbox"
+          class="input-checkbox"
+        />brakes</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="gitter-help-rooms"
+          type="checkbox"
+          class="input-checkbox"
+        />wheels</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="videos"
+          type="checkbox"
+          class="input-checkbox"
+        />contact points</label
+      >
+      
+    </div>
+
+    <div class="form-group">
+      <p1>If you could change one thing on your bike right now, what would it be?</p1>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+        <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+    <p>Would you recommend freeCodeCamp to a friend?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="1"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitely</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="2"
+          type="radio"
+          class="input-radio"
+        />Maybe</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="3"
+          type="radio"
+          class="input-radio"
+        />Not sure</label
+      >
+    </div>
+  </form>
+</div>  
+
